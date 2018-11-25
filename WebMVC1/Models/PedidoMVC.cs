@@ -21,7 +21,7 @@ namespace WebMVC1.Models
         [Required(ErrorMessage = "Este campo é Obrigatório")]
         [Display(Name = "Codigo do cliente")]
         [RegularExpression("^[0-9]*$")]
-        [StringLength(1, MinimumLength = 5)]
+        [StringLength(5, MinimumLength = 1)]
         public string CodCliente { get; set; }
         [Required(ErrorMessage = "Este campo é Obrigatório")]
         [DataType(DataType.Date)]
